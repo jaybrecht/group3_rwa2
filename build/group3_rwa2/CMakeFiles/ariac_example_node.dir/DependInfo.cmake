@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/justin/group3_rwa2/src/group3_rwa2/src/ariac_example_node.cpp" "/home/justin/group3_rwa2/build/group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o"
+  "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2/src/ariac_example_node.cpp" "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "GNU")
 
@@ -17,7 +17,7 @@ set(CMAKE_TARGET_DEFINITIONS_CXX
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/home/justin/group3_rwa2/src/group3_rwa2/include"
+  "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2/include"
   "/opt/ros/melodic/include"
   "/opt/ros/melodic/share/xmlrpcpp/cmake/../../../include/xmlrpcpp"
   )

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/justin/group3_rwa2/src
+CMAKE_SOURCE_DIR = /home/sgteja/ENPM809B/RWA-1/group3_rwa2/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/justin/group3_rwa2/build
+CMAKE_BINARY_DIR = /home/sgteja/ENPM809B/RWA-1/group3_rwa2/build
 
 # Include any dependencies generated for this target.
 include group3_rwa2/CMakeFiles/ariac_example_node.dir/depend.make
@@ -58,17 +58,17 @@ include group3_rwa2/CMakeFiles/ariac_example_node.dir/progress.make
 include group3_rwa2/CMakeFiles/ariac_example_node.dir/flags.make
 
 group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o: group3_rwa2/CMakeFiles/ariac_example_node.dir/flags.make
-group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o: /home/justin/group3_rwa2/src/group3_rwa2/src/ariac_example_node.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/justin/group3_rwa2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o"
-	cd /home/justin/group3_rwa2/build/group3_rwa2 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o -c /home/justin/group3_rwa2/src/group3_rwa2/src/ariac_example_node.cpp
+group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o: /home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2/src/ariac_example_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o"
+	cd /home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2 && /usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o -c /home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2/src/ariac_example_node.cpp
 
 group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.i"
-	cd /home/justin/group3_rwa2/build/group3_rwa2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/justin/group3_rwa2/src/group3_rwa2/src/ariac_example_node.cpp > CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.i
+	cd /home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2/src/ariac_example_node.cpp > CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.i
 
 group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.s"
-	cd /home/justin/group3_rwa2/build/group3_rwa2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/justin/group3_rwa2/src/group3_rwa2/src/ariac_example_node.cpp -o CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.s
+	cd /home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2 && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2/src/ariac_example_node.cpp -o CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.s
 
 group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o.requires:
 
@@ -88,38 +88,38 @@ ariac_example_node_OBJECTS = \
 # External object files for target ariac_example_node
 ariac_example_node_EXTERNAL_OBJECTS =
 
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: group3_rwa2/CMakeFiles/ariac_example_node.dir/build.make
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libtf.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libtf2_ros.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libactionlib.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libmessage_filters.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libtf2.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libroscpp.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/librosconsole.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libxmlrpcpp.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libroscpp_serialization.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/librostime.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libcpp_common.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libpthread.so
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
-/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: group3_rwa2/CMakeFiles/ariac_example_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/justin/group3_rwa2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node"
-	cd /home/justin/group3_rwa2/build/group3_rwa2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ariac_example_node.dir/link.txt --verbose=$(VERBOSE)
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: group3_rwa2/CMakeFiles/ariac_example_node.dir/src/ariac_example_node.cpp.o
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: group3_rwa2/CMakeFiles/ariac_example_node.dir/build.make
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libtf.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libtf2_ros.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libactionlib.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libmessage_filters.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libtf2.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libroscpp.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_filesystem.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_signals.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/librosconsole.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/librosconsole_log4cxx.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/librosconsole_backend_interface.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/liblog4cxx.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_regex.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libxmlrpcpp.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libroscpp_serialization.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/librostime.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /opt/ros/melodic/lib/libcpp_common.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_system.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_thread.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_chrono.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_date_time.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libboost_atomic.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libpthread.so
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: /usr/lib/x86_64-linux-gnu/libconsole_bridge.so.0.4
+/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node: group3_rwa2/CMakeFiles/ariac_example_node.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable /home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node"
+	cd /home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2 && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ariac_example_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-group3_rwa2/CMakeFiles/ariac_example_node.dir/build: /home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node
+group3_rwa2/CMakeFiles/ariac_example_node.dir/build: /home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node
 
 .PHONY : group3_rwa2/CMakeFiles/ariac_example_node.dir/build
 
@@ -128,10 +128,10 @@ group3_rwa2/CMakeFiles/ariac_example_node.dir/requires: group3_rwa2/CMakeFiles/a
 .PHONY : group3_rwa2/CMakeFiles/ariac_example_node.dir/requires
 
 group3_rwa2/CMakeFiles/ariac_example_node.dir/clean:
-	cd /home/justin/group3_rwa2/build/group3_rwa2 && $(CMAKE_COMMAND) -P CMakeFiles/ariac_example_node.dir/cmake_clean.cmake
+	cd /home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2 && $(CMAKE_COMMAND) -P CMakeFiles/ariac_example_node.dir/cmake_clean.cmake
 .PHONY : group3_rwa2/CMakeFiles/ariac_example_node.dir/clean
 
 group3_rwa2/CMakeFiles/ariac_example_node.dir/depend:
-	cd /home/justin/group3_rwa2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/justin/group3_rwa2/src /home/justin/group3_rwa2/src/group3_rwa2 /home/justin/group3_rwa2/build /home/justin/group3_rwa2/build/group3_rwa2 /home/justin/group3_rwa2/build/group3_rwa2/CMakeFiles/ariac_example_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/sgteja/ENPM809B/RWA-1/group3_rwa2/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/sgteja/ENPM809B/RWA-1/group3_rwa2/src /home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2 /home/sgteja/ENPM809B/RWA-1/group3_rwa2/build /home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2 /home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2/CMakeFiles/ariac_example_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : group3_rwa2/CMakeFiles/ariac_example_node.dir/depend
 

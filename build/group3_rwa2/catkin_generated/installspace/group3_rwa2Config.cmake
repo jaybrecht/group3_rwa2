@@ -67,14 +67,14 @@ set(group3_rwa2_CONFIG_INCLUDED TRUE)
 
 # set variables for source/devel/install prefixes
 if("FALSE" STREQUAL "TRUE")
-  set(group3_rwa2_SOURCE_PREFIX /home/justin/group3_rwa2/src/group3_rwa2)
-  set(group3_rwa2_DEVEL_PREFIX /home/justin/group3_rwa2/devel)
+  set(group3_rwa2_SOURCE_PREFIX /home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2)
+  set(group3_rwa2_DEVEL_PREFIX /home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel)
   set(group3_rwa2_INSTALL_PREFIX "")
   set(group3_rwa2_PREFIX ${group3_rwa2_DEVEL_PREFIX})
 else()
   set(group3_rwa2_SOURCE_PREFIX "")
   set(group3_rwa2_DEVEL_PREFIX "")
-  set(group3_rwa2_INSTALL_PREFIX /home/justin/group3_rwa2/install)
+  set(group3_rwa2_INSTALL_PREFIX /home/sgteja/ENPM809B/RWA-1/group3_rwa2/install)
   set(group3_rwa2_PREFIX ${group3_rwa2_INSTALL_PREFIX})
 endif()
 
@@ -154,7 +154,7 @@ foreach(library ${libraries})
     set(lib_path "")
     set(lib "${library}-NOTFOUND")
     # since the path where the library is found is returned we have to iterate over the paths manually
-    foreach(path /home/justin/group3_rwa2/install/lib;/opt/ros/melodic/lib)
+    foreach(path /home/sgteja/ENPM809B/RWA-1/group3_rwa2/install/lib;/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib;/opt/ros/melodic/lib)
       find_library(lib ${library}
         PATHS ${path}
         NO_DEFAULT_PATH NO_CMAKE_FIND_ROOT_PATH)

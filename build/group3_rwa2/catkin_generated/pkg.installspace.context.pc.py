@@ -4,5 +4,5 @@ PROJECT_PKG_CONFIG_INCLUDE_DIRS = "".split(';') if "" != "" else []
 PROJECT_CATKIN_DEPENDS = "".replace(';', ' ')
 PKG_CONFIG_LIBRARIES_WITH_PREFIX = "".split(';') if "" != "" else []
 PROJECT_NAME = "group3_rwa2"
-PROJECT_SPACE_DIR = "/home/justin/group3_rwa2/install"
+PROJECT_SPACE_DIR = "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/install"
 PROJECT_VERSION = "0.1.0"

@@ -178,16 +178,15 @@ public:
     double roll, pitch, yaw;
     m.getRPY(roll, pitch, yaw);
 
-    ROS_INFO_STREAM("Logical camera: '" << image_msg->models.size() << "' objects.");
+    ROS_INFO_STREAM_THROTTLE(10,"Logical camera: '" << image_msg->models.size() << "' objects.");
     
-    ROS_INFO_STREAM("Logical camera in world frame: ["<<image_msg->pose.position.x<<","
-    <<image_msg->pose.position.x<<","<<image_msg->pose.position.x<<"],["
+    ROS_INFO_STREAM_THROTTLE(10,"Logical camera in world frame: ["<<image_msg->pose.position.x<<","
+    <<image_msg->pose.position.y<<","<<image_msg->pose.position.z<<"],["
     <<roll<<","<<pitch<<","<<yaw<<"]");
 
     unsigned int num_models = image_msg->models.size();
     int i{0};
-    ros::Rate rate(5);
-    ros::Duration timeout(10.0);
+    ros::Duration timeDelay(10.0);
 
     static tf2_ros::StaticTransformBroadcaster brWorld;
     geometry_msgs::TransformStamped transformStamped;
@@ -198,8 +197,6 @@ public:
     transformStamped.transform.translation.x = image_msg->pose.position.x;
     transformStamped.transform.translation.y = image_msg->pose.position.y;
     transformStamped.transform.translation.z = image_msg->pose.position.z;
-    // tf2::Quaternion q;
-    // q.setRPY(0, 0, msg->theta);
     transformStamped.transform.rotation.x = image_msg->pose.orientation.x;
     transformStamped.transform.rotation.y = image_msg->pose.orientation.y;
     transformStamped.transform.rotation.z = image_msg->pose.orientation.z;
@@ -207,19 +204,15 @@ public:
 
     brWorld.sendTransform(transformStamped);
 
-    while(num_models>0 && ros::ok()){
+    while(num_models>0){
 
-      // geometry_msgs::TransformStamped transformStamped;
       static tf2_ros::StaticTransformBroadcaster br;
-      // static tf2_ros::TransformBroadcaster br;
       transformStamped.header.stamp = ros::Time::now();
       transformStamped.header.frame_id = "logical_cam";
       transformStamped.child_frame_id = image_msg->models[i].type+"_"+std::to_string(i);
       transformStamped.transform.translation.x = image_msg->models[i].pose.position.x;
       transformStamped.transform.translation.y = image_msg->models[i].pose.position.y;
       transformStamped.transform.translation.z = image_msg->models[i].pose.position.z;
-      // tf2::Quaternion q;
-      // q.setRPY(0, 0, msg->theta);
       transformStamped.transform.rotation.x = image_msg->models[i].pose.orientation.x;
       transformStamped.transform.rotation.y = image_msg->models[i].pose.orientation.y;
       transformStamped.transform.rotation.z = image_msg->models[i].pose.orientation.z;
@@ -227,7 +220,6 @@ public:
 
       br.sendTransform(transformStamped);
 
-      // geometry_msgs::TransformStamped transformStamped;
       try{
       transformStamped = tfBuffer.lookupTransform("world", image_msg->models[i].type+"_"+std::to_string(i),
                                ros::Time(0), timeout);
@@ -254,17 +246,15 @@ public:
       ROS_INFO_STREAM(partName<<" in world frame ["<<transformStamped.transform.translation.x<<","<<
         transformStamped.transform.translation.y<<","<<transformStamped.transform.translation.z<<"] ["<<
         roll<<","<<pitch<<","<<yaw<<"]");
-      // ROS_INFO_STREAM(image_msg->models[i]);
       i++;
       num_models--;
-      rate.sleep();
       }
   }
 
   /// Called when a new Proximity message is received.
   void break_beam_callback(const osrf_gear::Proximity::ConstPtr & msg) {
     if (msg->object_detected) {  // If there is an object in proximity.
-      ROS_INFO("Break beam triggered.");
+      ROS_INFO("********Break beam triggered.********");
     }
   }
 

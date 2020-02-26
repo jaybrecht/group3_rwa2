@@ -1,8 +1,8 @@
-# Install script for directory: /home/justin/group3_rwa2/src/group3_rwa2
+# Install script for directory: /home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/justin/group3_rwa2/install")
+  set(CMAKE_INSTALL_PREFIX "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/install")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -38,24 +38,24 @@ if(NOT DEFINED CMAKE_CROSSCOMPILING)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/justin/group3_rwa2/build/group3_rwa2/catkin_generated/installspace/group3_rwa2.pc")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2/catkin_generated/installspace/group3_rwa2.pc")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/group3_rwa2/cmake" TYPE FILE FILES
-    "/home/justin/group3_rwa2/build/group3_rwa2/catkin_generated/installspace/group3_rwa2Config.cmake"
-    "/home/justin/group3_rwa2/build/group3_rwa2/catkin_generated/installspace/group3_rwa2Config-version.cmake"
+    "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2/catkin_generated/installspace/group3_rwa2Config.cmake"
+    "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/build/group3_rwa2/catkin_generated/installspace/group3_rwa2Config-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/group3_rwa2" TYPE FILE FILES "/home/justin/group3_rwa2/src/group3_rwa2/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/group3_rwa2" TYPE FILE FILES "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2/package.xml")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/group3_rwa2" TYPE PROGRAM FILES
-    "/home/justin/group3_rwa2/src/group3_rwa2/script/ariac_example_node.py"
-    "/home/justin/group3_rwa2/src/group3_rwa2/script/tf2_example.py"
+    "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2/script/ariac_example_node.py"
+    "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2/script/tf2_example.py"
     )
 endif()
 
@@ -66,7 +66,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/group3_rwa2/ariac_example_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/group3_rwa2" TYPE EXECUTABLE FILES "/home/justin/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/group3_rwa2" TYPE EXECUTABLE FILES "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel/lib/group3_rwa2/ariac_example_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/group3_rwa2/ariac_example_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/group3_rwa2/ariac_example_node")
     file(RPATH_CHANGE
@@ -80,6 +80,6 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/group3_rwa2/config" TYPE FILE FILES "/home/justin/group3_rwa2/src/group3_rwa2/config/sample_gear_conf.yaml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/group3_rwa2/config" TYPE FILE FILES "/home/sgteja/ENPM809B/RWA-1/group3_rwa2/src/group3_rwa2/config/sample_gear_conf.yaml")
 endif()
 

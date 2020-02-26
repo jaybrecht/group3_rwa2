@@ -1,4 +1,4 @@
-prefix=/home/justin/group3_rwa2/devel
+prefix=/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel
 
 Name: group3_rwa2
 Description: Description of group3_rwa2
