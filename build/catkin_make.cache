@@ -1,0 +1,2 @@
+group3_rwa2
+-DCATKIN_DEVEL_PREFIX=/home/justin/group3_rwa2/devel -DCMAKE_INSTALL_PREFIX=/home/justin/group3_rwa2/install -G Unix Makefiles
