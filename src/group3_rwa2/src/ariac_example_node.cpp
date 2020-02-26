@@ -186,7 +186,7 @@ public:
 
     unsigned int num_models = image_msg->models.size();
     int i{0};
-    ros::Duration timeDelay(10.0);
+    ros::Duration timeout(10.0);
 
     static tf2_ros::StaticTransformBroadcaster brWorld;
     geometry_msgs::TransformStamped transformStamped;

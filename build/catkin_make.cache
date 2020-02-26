@@ -1,2 +1,0 @@
-group3_rwa2
--DCATKIN_DEVEL_PREFIX=/home/sgteja/ENPM809B/RWA-1/group3_rwa2/devel -DCMAKE_INSTALL_PREFIX=/home/sgteja/ENPM809B/RWA-1/group3_rwa2/install -G Unix Makefiles
